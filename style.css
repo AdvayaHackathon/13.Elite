@@ -1,0 +1,123 @@
+/* 
+
+/* Advanced Professional CSS for Digital Bus Project with Black Text */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f172a, #0ea5e9);
+  text-align: center;
+  color: #111111;
+  overflow-x: hidden;
+}
+
+header {
+  background: #0ea5e9;
+  color: #111111;
+  padding: 30px 20px;
+  border-bottom: 4px solid #ffffff33;
+  font-size: 1.8rem;
+}
+
+.button-section {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-section button {
+  padding: 25px 50px;
+  font-size: 1.3rem;
+  background-color: #1e293b;
+  color: #0ea5e9;
+  border: 2px solid #0ea5e9;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-section button:hover {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6);
+}
+
+#video-section {
+  margin: 50px auto;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  color: #111111;
+}
+
+.landing-page {
+  background: linear-gradient(to bottom, #0f172a, #0ea5e9);
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+.road {
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+  background: linear-gradient(to top, #1e293b, #334155);
+  overflow: hidden;
+  border-top: 5px solid #0ea5e9;
+}
+
+.bus {
+  width: 180px;
+  position: absolute;
+  bottom: 20px;
+  animation: drive 7s linear infinite;
+  cursor: pointer;
+  transition: transform 0.3s;
+  filter: drop-shadow(2px 5px 8px rgba(0, 0, 0, 0.5));
+}
+
+.bus:hover {
+  transform: scale(1.1);
+}
+
+@keyframes drive {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+footer {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  border-top: 2px solid #0ea5e9;
+}
+
+h1,
+h2,
+p,
+label {
+  color: #111111;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000305;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #0284c7;
+}
