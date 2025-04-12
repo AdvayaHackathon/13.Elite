@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Science - EduOnWheels</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Science - Explore the World Around You</h1>
+    <label for="langSelect">Voice-over Language:</label>
+    <select id="langSelect">
+      <option value="en-IN">English</option>
+      <option value="hi-IN">Hindi</option>
+      <option value="kn-IN">Kannada</option>
+    </select>
+    <button onclick="speakScienceIntro()">Play Voice-over</button>
+  </header>
+
+  <section id="video-section">
+    <h2>Watch Science Video</h2>
+    <video width="700" controls>
+      <source src="C:\Users\saksh\Downloads\aa.mp4"type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="quiz-section">
+    <h2>Science Quiz (Class 1 to 5)</h2>
+    <form id="scienceQuiz">
+      <p>1. What do plants need to make food?</p>
+      <label><input type="radio" name="q1" value="Sunlight"> Sunlight</label><br>
+      <label><input type="radio" name="q1" value="Milk"> Milk</label><br>
+      <label><input type="radio" name="q1" value="Oil"> Oil</label><br>
+
+      <p>2. Which organ helps us to breathe?</p>
+      <label><input type="radio" name="q2" value="Lungs"> Lungs</label><br>
+      <label><input type="radio" name="q2" value="Legs"> Legs</label><br>
+      <label><input type="radio" name="q2" value="Eyes"> Eyes</label><br>
+
+      <p>3. Which of these is a source of water?</p>
+      <label><input type="radio" name="q3" value="River"> River</label><br>
+      <label><input type="radio" name="q3" value="Chips"> Chips</label><br>
+      <label><input type="radio" name="q3" value="Book"> Book</label><br>
+
+      <button type="button" onclick="submitQuiz('scienceQuiz')">Submit Quiz</button>
+    </form>
+    <p id="quizResult"></p>
+  </section>
+
+  <footer>
+    <a href="library.html">Back to Library</a>
+  </footer>
+</body>
+</html>
